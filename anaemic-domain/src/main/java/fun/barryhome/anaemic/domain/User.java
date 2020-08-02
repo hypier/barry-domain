@@ -10,7 +10,9 @@ import javax.persistence.Transient;
 @Entity
 @Data
 @Builder
+@ToString
 @AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id
@@ -29,11 +31,6 @@ public class User {
     public void per() {
         isRepository = true;
     }
-
-    public User() {
-    }
-
-
 
     @Override
     public String toString() {
